@@ -7,8 +7,9 @@ nltk==3.8.1
 textblob==0.17.1
 vaderSentiment==3.3.2
 werkzeug==3.0.1
-pandas==1.5.3
+pandas>=2.0.0
 openpyxl==3.1.2
+numpy<2.0.0
 
 # NLP - transformer-based models for high-accuracy sentiment
 transformers==4.46.2

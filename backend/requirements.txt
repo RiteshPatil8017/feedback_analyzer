@@ -1,0 +1,21 @@
+flask==3.0.0
+flask-cors==4.0.0
+flask-sqlalchemy==3.1.1
+flask-migrate==4.0.5
+python-dotenv==1.0.0
+nltk==3.8.1
+textblob==0.17.1
+vaderSentiment==3.3.2
+werkzeug==3.0.1
+pandas==1.5.3
+openpyxl==3.1.2
+
+# NLP - transformer-based models for high-accuracy sentiment
+transformers==4.46.2
+torch==2.5.1
+
+# Production server for Render
+gunicorn==21.2.0
+
+# PostgreSQL database adapter for production persistence
+psycopg2-binary==2.9.9

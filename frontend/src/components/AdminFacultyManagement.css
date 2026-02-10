@@ -1,0 +1,146 @@
+.admin-faculty-management {
+  padding: 1rem;
+  /* Slightly more padding for mobile breathing room */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-faculty-management h1 {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+  /* Responsive font size */
+}
+
+.faculty-actions {
+  margin-bottom: 1.5rem;
+}
+
+.add-faculty-form {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+/* Responsive Form Rows */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  /* Default side-by-side */
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Faculty Table Wrapper to handle overflow */
+.faculty-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 1rem;
+}
+
+.faculty-table {
+  width: 100%;
+  min-width: 600px;
+  /* Ensures table doesn't squish too much */
+  border-collapse: collapse;
+  background: white;
+}
+
+.faculty-table th,
+.faculty-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  /* Keeps content clean in horizontal scroll */
+}
+
+/* Modal Responsiveness */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .admin-faculty-management h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+    /* Stack inputs on mobile */
+    gap: 0;
+  }
+
+  .faculty-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    /* Full width buttons for easier tapping */
+    margin-bottom: 0.5rem;
+  }
+
+  .actions-cell {
+    flex-direction: column;
+    /* Stack Edit/Delete buttons */
+    gap: 0.25rem;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Buttons and States (Preserved) */
+.btn-danger {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: #2d5a87;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem;
+}
